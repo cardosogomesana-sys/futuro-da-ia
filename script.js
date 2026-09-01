@@ -6,46 +6,45 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Atualmente o hábito de leitura não é comum entre os jovens, a leitura é algo importânte para a formação desses jovens?",
+        enunciado: "Com o avanço rápido das ferramentas de Inteligência Artificial, como você enxerga o impacto da IA no seu dia a dia e nos estudos?",
         alternativas: [
             {
-                texto: "Sim, já que, além de inumeros livros servirem de base para vestibulares, eles podem trazer conhecimentos de assuntos diversos e expandir o vacabulario do leitor",
-                afirmacao: "Os livros ainda são de uma grande importância para os estudos e para a formação da etica e moral da população, sendo sem dúvidas um grande alicerce da sociedade."
+                texto: "A IA é um ótimo recurso para otimizar tarefas, tirar dúvidas rápidas e auxiliar na aprendizagem.",
+                afirmacao: "Você enxerga a Inteligência Artificial como uma aliada no aprendizado e na rotina, aproveitando a tecnologia para expandir seus conhecimentos de forma ágil."
             },
             {
-                texto: "A leitura é indiferente, já que, atualmente não são necessarios livros para os estudos ou enterterimento, já que, atualmente não são necessarios livros para estudos levando em conta que hoje é possível encomtrar ambos nas redes sociais",
-                afirmacao: "Apesar do grande acesso a informaçõese conteúdos que as redes sociais nos proporcionam, os livros não deixam de ser essenciais na sociedade seja para estudos ou para obter conhecimento."
+                texto: "Tenho receio de que o uso diário de IA acabe reduzindo o pensamento crítico e a autonomia das pessoas.",
+                afirmacao: "Você mantém um olhar cauteloso sobre a tecnologia, priorizando a autonomia do pensamento humano e a análise crítica antes de depender das ferramentas."
             }
         ]
     },
     {
-        enunciado: "Algumas pessoas tem muita dificuldade para começarem no mundo da leitura, dito isso qual seria a maneira mais recomendada para se começar a ler?",
+        enunciado: "A automação por IA promete transformar o mercado de trabalho nos próximos anos. Qual cenário você considera mais provável?",
         alternativas: [
             {
-                texto: "Ler livros pequenos, de facíl entendimento e que sejam de assuntos de interesse do leitor.",
-                afirmacao: "Para quem não  tem o hábito de ler, porém tem vontadede iniciar no mundo da leitura o mais indicado seria ler livros pequenos e de assuntos que sejam de interesse do leitor para despertar o interesse da leitura e tornar a mesma um habito."
+                texto: "Novas profissões surgirão e a IA vai substituir tarefas repetitivas, permitindo que o ser humano foque na criatividade.",
+                afirmacao: "Acredita que o futuro do trabalho trará uma parceria positiva entre humanos e máquinas, onde a automação abre espaço para a criatividade e inovação."
             },
             {
-                texto: "Ler livros didáticos e de autores conhecidos.",
-                afirmacao: "Para quem tem interessede começar na leitura não seria ideal começar diretamente pelos clássicos já que a leitura dos mesmos pode ser mais dificil dificultando assim a criação do habito da leitura."
+                texto: "Muitos empregos tradicionais sumirão rapidamente, gerando desafios econômicos e de requalificação profissional.",
+                afirmacao: "Reconhece os impactos socioeconômicos do avanço tecnológico e entende a urgência do debate sobre requalificação e adaptação ao mercado."
             }
         ]
     },
     {
-        enunciado: "Atualmente vemos um grande aumentos nos valores dos livros físicos, oque dificulta a aquisição dos mesmos, a leitura digital vem se popularizou entre os leitores nos ultimos anos em parte pelos preços mais acessiveis, então seria ela uma alternativa viavel aos livros físicos?",
+        enunciado: "Sobre a ética e a regulamentação do desenvolvimento de novas IAs, qual deve ser a prioridade da sociedade?",
         alternativas: [
             {
-                texto: "Provavelmente, já que iria possibilitar uma maior aquisição por parte da população.",
-                afirmacao: "Já para quem não  tem condições de adquirir livros físicos os livros online são uma otima opção, pois permite a aquisição dos mesmos por um preço muito menor ou até mesmo gratuitamente, o que sem duvidas pode abrir grandes portas para esses leitores."
+                texto: "Criar leis rigorosas para combater desinformação, plágio e proteger a privacidade dos dados das pessoas.",
+                afirmacao: "Defende uma regulamentação firme que imponha limites éticos, garantindo a proteção de dados, a segurança e a transparência na era digital."
             },
             {
-                texto: "Não teria grande importância já que grande parte da população continuaria adquirindo livros físicos apesar dos preços.",
-                afirmacao: "Apesar do consumo de livros físicos ainda ser maioria os livros oline permitem que pessoas que não podem adquirir livros físicos tenham acesso a leitura, podendo gerar grandes oportunidades para esses leitores."
+                texto: "Garantir a liberdade de inovação para que a tecnologia continue evoluindo sem barreiras burocráticas.",
+                afirmacao: "Valoriza a liberdade de inovação contínua, acreditando que a evolução acelerada da tecnologia traz benefícios que superam os riscos potenciais."
             }
         ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -79,7 +78,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Sobre a leitura...";
+    caixaPerguntas.textContent = "Sua perspectiva sobre o Futuro da IA:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
